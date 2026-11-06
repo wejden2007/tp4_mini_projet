@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+<body>
+    <center><h1>CONTACT</h1></center>
+    <form action="">
+        <fieldset>
+            <legend>Notre informations et contact :</legend>
+            <p><a href="mailto:flashfood@gmail.com">Contacter-nous en email</a></p>
+            <p><a href="https://www.facebook.com/flashfood">Notre page Facebook</a></p>
+            <p><a href="https://www.instagram.com/flashfood">Notre page Instagram</a></p>
+            <p>Notre numéro de téléphone : 11 222 333</p>
+        </fieldset>
+        <fieldset>
+            <legend>Votre cordonnées :</legend>
+            <p>
+                <label>Nom :</label>
+                <input type="text" id="n" required autofocus maxlength="50" placeholder="Votre nom">
+            </p>
+            <p>
+                <label>Prénom :</label>
+                <input type="text" id="p"required maxlength="50" placeholder="Votre prénom">
+            </p>
+            <p>
+                <label>Date de naissance :</label>
+                <input type="date"  id="dt">
+            </p>
+            <p>
+                <label>Adresse email :</label>
+                <textarea name="ad" id="ad" required placeholder="exemple@email.com" cols="30" rows="1"></textarea>
+            </p>
+            <p>
+                <label>Site web :</label>
+                <input type="url" id="sw" value="http://www." placeholder="https://monsite.com">
+            </p>
+            <p>
+                <label>Code secret :</label>
+                <input type="password" id="cs" minlength="6" maxlength="20">
+            </p>
+            <p>
+                <label>Genre :</label>
+                <input type="radio" id="h" checked name="g">Homme
+                <input type="radio" id="f" name="g">Femme
+            </p>
+            <p>
+                <label>Pays :</label>
+                <select name="reg" id="reg">
+                    <option value="0">Choisir votre pays</option>
+                    <option value="1">Tunisie</option>
+                    <option value="2">France</option>
+                    <option value="3">Algérie</option>
+                    <option value="4">Maroc</option>
+                    <option value="5">Autre</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Informations complémentaires :</legend>
+            <p>
+                <label>Votre numéro de téléphone :</label>
+                <input type="tel" pattern="[0,9]{8}" placeholder="12345678">
+            </p>
+            <p>
+                <label>Adresse postale :</label>
+                <input type="text" placeholder="votre addresse">
+            </p>
+            <p>
+                <label>Code postale :</label>
+                <input type="text" value="1000" maxlength="4">
+            </p>
+            <p>
+                <label>Semestre :</label>
+                <select name="reg" id="reg">
+                    <option value="0">Choisir votre semestre</option>
+                    <option value="1">S1</option>
+                    <option value="2">S2</option>
+                    <option value="3">S3</option>
+                    <option value="4">S4</option>
+                </select>
+            </p>
+            <p>
+                <label>Région préférée :</label>
+                <select name="rp" id="rp">
+                    <option value="0">Choisir votre region</option>
+                    <option value="1">Tunis</option>
+                    <option value="2">Sousse</option>
+                    <option value="3">Sfax</option>
+                    <option value="4">Djerba</option>
+                    <option value="5">Touzeur</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Gout et centres d'intéret :</legend>
+            <p>
+                <label>Centre d'intéret :</label>
+                <input type="checkbox" id="cl" checked>Culture
+                <input type="checkbox" id="ga">Gastronomie
+                <input type="checkbox" id="pl">Plage
+                <input type="checkbox" id="de">Désert
+                <input type="checkbox" id="hi">Histoire
+            </p>
+            <p>
+                <label>Niveau en HTML :</label>
+                <input type="range" min="0" max="100" step="10">
+            </p>
+            <p>
+                <label>Note de satisfaction :</label>
+                <input type="number" min="1" max="10" step="1">
+            </p>
+            <p>
+                <label>Message/Commentaire :</label>
+                <textarea name="mc" id="mc" rows="5" cols="40" placeholder="adapté"></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Photo :</legend>
+            <p>
+                <label>Photo de profil :</label>
+                <input type="file" accept="image/*" >
+            </p>
+            <p> <input type="submit" value="Envoyer" id="b1"> <input type="reset" value="Effacer" id="b2"></p>
+        </fieldset>
+    </form>
+    <a href="acceuil.html">Retour à l'acceuil</a>
+</body>
+</html>
