@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>commande</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <center><h1>COMMANDE</h1></center>
+    <form action="">
+        <fieldset>
+            <legend>A propos le plat :</legend>
+            <p>
+                <label>Nom du plat :</label>
+                <input type="text" id="npl">
+            </p>
+            <p>
+                <label>Suppléments :</label>
+                <input type="text" id="sup">
+            </p>
+            <p>
+                <label>Quantité :</label>
+                <input type="number" id="q">
+            </p>
+            <p>
+                <label>Date de commande :</label>
+                <input type="date"  id="dt">
+            </p>
+            <p>
+                <label>L'heure de commande :</label>
+                <input type="time"  id="h">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Paiement</legend>
+            <p>
+                <label>Choix :</label>
+                <input type="radio" name="ch" id="sp">sur place
+                <input type="radio" name="ch"id="em">à emporter
+                <input type="radio"name="ch" id="liv">en livraison
+            </p>
+            <p>
+                <label>Module de paiement :</label>
+                <select name="p" id="p">
+                    <option value="0">choisir votre module de paiement</option>
+                    <option value="1">sécurisé en ligne</option>
+                    <option value="2">paiement sur place</option>
+                </select>
+            </p>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Votre informations personnels :</legend>
+            <p>
+                <label>Nom & prénom :</label>
+                <input type="text" id="np">
+            </p>
+            <p>
+                <label>Votre numéro de téléphone :</label>
+                <input type="text" max="8" min="8" required>
+            </p>
+            <p>
+                <label>Mot de sécurité donné par notre restaurant si ce n'est pas votre 1er fois :</label>
+                <input type="password" id="ps">
+            </p>
+            <p>
+                <label>Adresse :</label>
+                <textarea name="ad" id="ad" cols="30" rows="1"></textarea>
+            </p>
+            <p>
+                <label>Date:</label>
+                <input type="datetime-local"  id="dt">
+            </p>
+        </fieldset>
+        <p> <input type="submit" value="Envoyer" id="b1"> <input type="reset" value="Annuler" id="b2"></p>
+    </form>
+</body>
+</html>
